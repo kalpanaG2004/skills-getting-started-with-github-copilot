@@ -112,9 +112,9 @@ button:hover {
   margin-top: 20px;
   padding: 10px;
   border-radius: 4px;
-}
-
-.success {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
   background-color: #e8f5e9;
   color: #2e7d32;
   border: 1px solid #a5d6a7;
@@ -141,4 +141,62 @@ footer {
   margin-top: 30px;
   padding: 20px;
   color: #666;
+}
+
+.participants {
+  margin-top: 12px;
+}
+
+.participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.participants-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.participants-list li {
+  margin: 0;
+  list-style: none; /* remove default bullets so badges control appearance */
+}
+
+.participant-badge {
+  display: inline-block;
+  background: linear-gradient(180deg, #eef3ff, #e3edff);
+  color: #0b3a8c;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid #c9daff;
+  box-shadow: 0 1px 0 rgba(11,58,140,0.06);
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #b71c1c;
+}
+
+/* small helper when no participants exist */
+.no-participants {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+  margin: 0;
 }
