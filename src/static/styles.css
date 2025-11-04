@@ -112,9 +112,9 @@ button:hover {
   margin-top: 20px;
   padding: 10px;
   border-radius: 4px;
-}
-
-.success {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
   background-color: #e8f5e9;
   color: #2e7d32;
   border: 1px solid #a5d6a7;
@@ -178,6 +178,19 @@ footer {
   font-size: 13px;
   border: 1px solid #c9daff;
   box-shadow: 0 1px 0 rgba(11,58,140,0.06);
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #d32f2f;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #b71c1c;
 }
 
 /* small helper when no participants exist */
